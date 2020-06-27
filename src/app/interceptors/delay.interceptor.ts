@@ -14,6 +14,7 @@ export class DelayInterceptor implements HttpInterceptor {
   constructor() { }
 
   intercept(request: HttpRequest<unknown>, next: HttpHandler): Observable<HttpEvent<unknown>> {
-    return next.handle(request).pipe(delay(2000));
+
+    return request.url.indexOf("surrogates.json") < 0 ? next.handle(request).pipe(delay(2000)) : next.handle(request).pipe(delay(500)) ;
   }
 }
