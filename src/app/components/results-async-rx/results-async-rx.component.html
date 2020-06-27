@@ -1,0 +1,23 @@
+<h3>Records with Async and Rx</h3>
+<hr>
+<ng-template #loading>
+    <h4>Loading . . . </h4>
+</ng-template>
+<table *ngIf="records$ | async as records; else loading">
+    <thead>
+        <tr>
+            <td>ID</td>
+            <td>Price</td>
+            <td>Product</td>
+            <td>Order Date</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let rec of records">
+            <td>{{rec.guid}}</td>
+            <td>{{rec.price}}</td>
+            <td>{{rec.product}}</td>
+            <td>{{rec.orderDate}}</td>
+        </tr>
+    </tbody>
+</table>

@@ -1,0 +1,23 @@
+<h2>List of Customers</h2>
+<hr>
+<ng-template #loading>
+    <h4>Loading . . . </h4>
+</ng-template>
+<table *ngIf="users$ | async as users; else loading">
+    <thead>
+        <tr>
+            <td>ID</td>
+            <td>Name</td>
+            <td>Age</td>
+            <td>Address</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let rec of users">
+            <td><a [routerLink]="['/orders']" [queryParams]="{custid : rec.id}">{{rec.id}}</a></td>
+            <td><a [routerLink]="['/orders']" [queryParams]="{custid : rec.id}">{{rec.name}}</a></td>
+            <td>{{rec.age}}</td>
+            <td>{{rec.address}}</td>
+        </tr>
+    </tbody>
+</table>

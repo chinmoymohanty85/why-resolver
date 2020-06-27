@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "age": 31,
+        "name": "Robertson Anthony",
+        "address": "649 Ivan Court, Leyner, Marshall Islands, 2817"
+    },
+    {
+        "id": 2,
+        "age": 36,
+        "name": "Pennington Hanson",
+        "address": "978 Garden Street, Saticoy, Ohio, 1980"
+    },
+    {
+        "id": 3,
+        "age": 39,
+        "name": "Lenore Cantrell",
+        "address": "688 Monitor Street, Mammoth, Federated States Of Micronesia, 7283"
+    },
+    {
+        "id": 4,
+        "age": 36,
+        "name": "Goff Hunt",
+        "address": "609 Bedford Place, Lydia, Washington, 3178"
+    },
+    {
+        "id": 5,
+        "age": 35,
+        "name": "Gonzales Velez",
+        "address": "239 Brooklyn Road, Sheatown, New York, 7204"
+    },
+    {
+        "id": 6,
+        "age": 34,
+        "name": "Buchanan Wall",
+        "address": "913 Clark Street, Sanders, Arkansas, 9678"
+    },
+    {
+        "id": 7,
+        "age": 22,
+        "name": "Marissa Vinson",
+        "address": "356 Clifton Place, Whitewater, Arizona, 4011"
+    }
+]

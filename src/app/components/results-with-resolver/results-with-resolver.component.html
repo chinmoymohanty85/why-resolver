@@ -1,0 +1,20 @@
+<h3>Results with Resolver</h3>
+<hr>
+<table>
+    <thead>
+        <tr>
+            <td>ID</td>
+            <td>Price</td>
+            <td>Product</td>
+            <td>Order Date</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let rec of records">
+            <td>{{rec.guid}}</td>
+            <td>{{rec.price}}</td>
+            <td>{{rec.product}}</td>
+            <td>{{rec.orderDate}}</td>
+        </tr>
+    </tbody>
+</table>
