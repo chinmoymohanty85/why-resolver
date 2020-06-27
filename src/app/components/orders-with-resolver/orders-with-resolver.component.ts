@@ -13,10 +13,13 @@ import { OrdersService } from '../../services/orders.service';
 export class OrdersWithResolverComponent implements OnInit {
 
   records$: Observable<Order[]>;
+  id: string;
+  surrogateId: string;
   constructor(private route: ActivatedRoute, private ordersService: OrdersService) { }
 
   ngOnInit(): void {
     this.route.data.subscribe((data: { surrogateId: string }) => {
+      this.surrogateId = data.surrogateId;
       this.records$ = this.ordersService.GetOrdersBySurrogateId(data.surrogateId);
     });
   }
